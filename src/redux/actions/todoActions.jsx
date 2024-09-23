@@ -7,3 +7,8 @@ export const ekle = (todo) => ({
   type: "EKLE",
   payload: todo,
 });
+
+export const update = (id) => ({
+  type: "COMPLETE",
+  payload: id,
+});
