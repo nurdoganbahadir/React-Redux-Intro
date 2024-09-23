@@ -1,7 +1,7 @@
 import React from "react";
 import "./Counter.css";
 import { useDispatch, useSelector } from "react-redux";
-import { arttir } from "../../redux/actions/counterActions";
+import { arttir, azalt, sifirla } from "../../redux/actions/counterActions";
 
 const Counter = () => {
   const { sayac, text } = useSelector((state) => state.counterReducer);
@@ -19,8 +19,15 @@ const Counter = () => {
         >
           ARTTIR
         </button>
-        <button className="counter-button">RESET</button>
-        <button className="counter-button negative">AZALT</button>
+        <button onClick={() => dispatch(sifirla())} className="counter-button">
+          RESET
+        </button>
+        <button
+          onClick={() => dispatch(azalt())}
+          className="counter-button negative"
+        >
+          AZALT
+        </button>
       </div>
     </div>
   );
