@@ -2,6 +2,7 @@ import { combineReducers, legacy_createStore as createStore } from "redux"; //!e
 import counterReducer from "./reducers/counterReducer";
 import todoReducer from "./reducers/todoReducer";
 
+//!içeride bir adet reducer olsa bile combine ediyoruz.
 const topluReducer = combineReducers({
   counterReducer: counterReducer,
   todoReducer: todoReducer,
