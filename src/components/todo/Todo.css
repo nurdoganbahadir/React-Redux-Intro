@@ -27,11 +27,11 @@
   min-width: 400px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   margin: 10px;
+  border-radius: 10px;
 }
-
-
 
 .delete-logo {
   width: 40px;

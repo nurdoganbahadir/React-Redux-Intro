@@ -11,7 +11,7 @@ const TodoItem = ({ gorev }) => {
     <div
       style={{
         textDecoration: gorev.completed ? "line-through" : "none",
-        backgroundColor: gorev.completed ? "lightgray" : "orange",
+        backgroundColor: gorev.completed ? "lightgreen" : "orange",
       }}
       className="todo-list"
     >
